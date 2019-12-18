@@ -104,13 +104,6 @@ def movies_with_directors_set(source)
     while index < source.length do
       binding.pry
         result << movies_with_director_key(source[index][:name], source[index][:movies] )
-        inner_index = 0
-    while inner_index < source[index][:movies].length do
-        inside_hash[:title] = source[index][:movies][inner_index][:title]
-        inner_index += 1
-        inside_array.push(inside_hash)
-    end
-    result.push(inside_array)
     index += 1
     end
     result
