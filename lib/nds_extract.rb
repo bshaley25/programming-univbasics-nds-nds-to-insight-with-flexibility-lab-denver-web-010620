@@ -102,6 +102,7 @@ def movies_with_directors_set(source)
     result = []
     index = 0
     while index < source.length do
+      binding.pry
         result << movies_with_director_key(source[index][:name], )
         inner_index = 0
     while inner_index < source[index][:movies].length do
